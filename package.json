@@ -1,0 +1,23 @@
+{
+  "name": "intl-currency-formatting",
+  "version": "1.0.0",
+  "description": "A lib for formatting monetary amounts implemented on ECMAScript Internationalization API",
+  "main": "src/index.js",
+  "types": "./types/src/index.d.ts",
+  "scripts": {
+    "test": "npm run lint && jest",
+    "build": "tsc",
+    "lint": "eslint src test"
+  },
+  "author": "aleks.rodic@pm.me",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint": "^8.37.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.0.5",
+    "typescript": "^5.0.3"
+  }
+}
