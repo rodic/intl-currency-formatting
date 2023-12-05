@@ -1,16 +1,31 @@
 {
   "name": "intl-currency-formatting",
+  "homepage": "https://github.com/rodic/intl-currency-formatting",
+  "keywords": [
+    "currency",
+    "format",
+    "international",
+    "typescript"
+  ],
+  "author": "Aleksandar Rodić",
+  "email": "aleks.rodic@pm.me",
   "version": "1.0.0",
   "description": "A lib for formatting monetary amounts implemented on ECMAScript Internationalization API",
-  "main": "src/index.js",
+  "main": "dist/src/index.js",
   "types": "./types/src/index.d.ts",
   "scripts": {
+    "clean": "rm -r dist/*",
     "test": "npm run lint && jest",
     "build": "tsc",
-    "lint": "eslint src test"
+    "lint": "eslint src test",
+    "prepublish": "npm run lint && npm run build",
+    "pretest": "npm run build"
   },
-  "author": "aleks.rodic@pm.me",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodic/intl-currency-formatting"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.0",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
